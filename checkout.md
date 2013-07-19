@@ -44,3 +44,5 @@ Total price expected: $3.11
 Basket: AP1, AP1, FR1, AP1
 Total price expected: $16.61
 ```
+
+PS: Here at TextMaster, we love specs :)
