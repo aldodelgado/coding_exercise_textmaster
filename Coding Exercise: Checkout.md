@@ -1,5 +1,5 @@
 _Please send a zip archive containing your code and any relevant materials in an email along with your resume and motivations to jobs@textmaster.com, please add tech-test@textmaster.com in CC.
-The purpose of this test is to verify your abilities to code and see how you architecture an application, so this is the time to show everything you know that is applicable et relevant (design pattern, OOP concepts, etc.)
+The purpose of this test is to verify your abilities to code and see how you architecture an application, so this is the time to show everything you know that is applicable and relevant (design pattern, OOP concepts, etc.)
 Finally, please note that even if you have questions about the test we will not answer them, do what you think is best._
 
 
