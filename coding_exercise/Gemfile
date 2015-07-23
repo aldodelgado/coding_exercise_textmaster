@@ -37,6 +37,7 @@ gem 'angular-rails-templates'
 gem 'bootstrap-sass'
 gem 'decent_exposure'
 gem 'haml'
+gem 'annotate'
 
 gem 'minitest', group: :test
 gem 'minitest-reporters', group: :test
