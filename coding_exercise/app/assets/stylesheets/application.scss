@@ -8,8 +8,25 @@ $color_chartreuse_approx: #74df00;
 body {
   margin-top: 100px;
 }
-
-
+hr {
+  margin:40px 0;
+}
+h3 {
+  color:#1758AA
+}
+h3 span {
+  font-size:14px;
+  display:block;
+}
+span[ng-click] {
+  cursor: pointer;
+}
+.ngCart.cart span[ng-click] {
+  cursor: pointer;
+}
+.ngCart.cart .glyphicon.disabled {
+  color: #aaa;
+}
 ul.dropdown-cart {
   min-width: 250px;
   li {
@@ -52,16 +69,6 @@ ul.dropdown-cart {
 }
 .product {
   padding: 15px;
-}
-.product-title {
-  font-size: 20px;
-}
-.product-price {
-  font-size: 22px;
-}
-.product-stock {
-  color: $color_chartreuse_approx;
-  font-size: 20px;
 }
 .add-to-cart {
   width: 100%;
