@@ -37,7 +37,7 @@ angular.module('ngCart.fulfilment', []).service('fulfilmentProvider', [
   ($http, ngCart) ->
 
     @checkout = (settings) ->
-      $http.post settings.url, data: ngCart.toObject()
+      $http.post '/checkout/add', data: ngCart.toObject()
 
     return
 ]).service 'ngCart.fulfilment.paypal', [
