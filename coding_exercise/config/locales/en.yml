@@ -5,6 +5,7 @@ en:
   coding_exercise: "Coding Exercise"
   console_log: "Console log"
   current: "(current)"
-  github: "Github"
+  github_profile: "Github Profile"
+  github_project: "Github Project"
   products: "Products"
   rails: "Rails"
