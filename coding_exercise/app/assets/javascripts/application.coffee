@@ -11,7 +11,7 @@ myApp.controller 'myCtrl', [
   '$http'
   'ngCart'
   ($scope, $http, ngCart) ->
-    ngCart.setTaxRate 7.5
-    ngCart.setShipping 2.99
+    ngCart.setTaxRate 0.0
+    ngCart.setShipping 0.0
     return
 ]
