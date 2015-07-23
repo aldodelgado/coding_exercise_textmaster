@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %meta{:content => "Coding exercise from textmaster.com for the position of Senior Rails developer with a knack for front-end using Angular JS", :name => "description"}
+    %meta{:content => "Aldo Delgado, Web Application Developer, Ruby on Rails", :name => "keywords"}
+    %meta{:content => "Aldo Dellgado", :name => "author"}
+    %title
+      = t(:coding_exercise)
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = render 'shared/navigation'
+    = yield
