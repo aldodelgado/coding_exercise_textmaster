@@ -36,3 +36,15 @@ class ProductTest < ActiveSupport::TestCase
   end
 
 end
+
+# == Schema Information
+#
+# Table name: products
+#
+#  id         :integer          not null, primary key
+#  code       :string           default("")
+#  name       :string           default("")
+#  price      :decimal(10, 2)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
