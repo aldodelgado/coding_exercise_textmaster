@@ -1,3 +1,10 @@
 en:
-  hello: "Hello world"
+  add_to_cart: "Add to Cart"
+  cart: "Cart"
+  checkout: "Checkout"
   coding_exercise: "Coding Exercise"
+  console_log: "Console log"
+  current: "(current)"
+  github: "Github"
+  products: "Products"
+  rails: "Rails"
