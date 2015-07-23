@@ -1,0 +1,68 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// colors
+$color_concrete_approx: #f3f3f3;
+$color_chartreuse_approx: #74df00;
+
+body {
+  margin-top: 100px;
+}
+
+
+ul.dropdown-cart {
+  min-width: 250px;
+  li {
+    .item {
+      display: block;
+      padding: 3px 10px;
+      margin: 3px 0;
+      &:hover {
+        background-color: $color_concrete_approx;
+      }
+      &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+    }
+    .item-left {
+      float: left;
+      img {
+        float: left;
+      }
+      span.item-info {
+        float: left;
+        margin-left: 10px;
+        span {
+          display: block;
+        }
+      }
+    }
+    .item-right {
+      float: right;
+      button {
+        margin-top: 14px;
+      }
+    }
+  }
+}
+.product {
+  padding: 15px;
+}
+.product-title {
+  font-size: 20px;
+}
+.product-price {
+  font-size: 22px;
+}
+.product-stock {
+  color: $color_chartreuse_approx;
+  font-size: 20px;
+}
+.add-to-cart {
+  width: 100%;
+}
