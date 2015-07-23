@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root 'baskets#index'
+  resources :products
+  resources :baskets
+
+  root 'products#index'
 end
