@@ -1,0 +1,13 @@
+%h3
+  = t(:checkout)
+.row
+  .col-xs-6
+    %h4
+      = t(:console_log)
+    %ngcart-checkout{:service => "log"}
+      = t(:checkout)
+  .col-xs-6
+    %h4
+      = t(:rails)
+    %ngcart-checkout{:service => "http", :settings => "httpSettings"}
+      = t(:checkout)
