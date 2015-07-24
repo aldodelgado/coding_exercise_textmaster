@@ -19,6 +19,7 @@ angular.module('ngCart', ['ngCart.directives'])
 .service('ngCart', ['$rootScope', 'ngCartItem', 'store', function ($rootScope, ngCartItem, store) {
     this.init = function(){
         this.$cart = {
+            rule : null,
             shipping : null,
             taxRate : null,
             tax : null,
@@ -46,6 +47,15 @@ angular.module('ngCart', ['ngCart.directives'])
             }
         });
         return build;
+    };
+
+    this.getRule = function(){
+        return this.$cart.rule;
+    };
+
+    this.setRule = function(rule){
+        this.$cart.rule = rule;
+        return this.getRule();
     };
 
     this.setShipping = function(shipping){
@@ -151,6 +161,7 @@ angular.module('ngCart', ['ngCart.directives'])
         });
 
         return {
+            rule: this.getRule(),
             shipping: this.getShipping(),
             tax: this.getTax(),
             taxRate: this.getTaxRate(),
@@ -259,7 +270,7 @@ angular.module('ngCart', ['ngCart.directives'])
 
     item.prototype.getData = function(){
         if (this._data) return this._data;
-        else $log.info('This item has no data');
+        //else //$log.info('This item has no data');
     };
 
 

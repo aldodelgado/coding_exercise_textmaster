@@ -5,22 +5,18 @@ class CheckoutsController < ApplicationController
 
   def create
 
-    co = Checkout.new(pricing_rules)
+    co = Checkout.new({rule: params[:data]['rule']})
     params[:data][:items].each do |item|
       co.scan(item)
     end
-    debugger
+    co.total = co.running_total
+    co.save
 
-    redirect_to products_path
+    flash[:notice] = "Checkout successful! :-)"
+    render json: flash
   end
 
   private
-
-  def pricing_rules
-    pricing_rule = { rule: 'bogo' }
-    #pricing_rule = { rule: 'bulk' }
-    pricing_rule
-  end
 
   def checkout_params
     params.require(:checkout).permit(

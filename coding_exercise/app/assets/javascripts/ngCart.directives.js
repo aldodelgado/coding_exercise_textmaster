@@ -48,7 +48,7 @@ angular.module('ngCart.directives', ['ngCart.fulfilment'])
         };
     }])
 
-    .directive('ngcartCart', [function(){
+    .directive('ngcartCart', ['ngCart', function(ngCart){
         return {
             restrict : 'E',
             controller : 'CartController',
@@ -61,7 +61,11 @@ angular.module('ngCart.directives', ['ngCart.fulfilment'])
                 }
             },
             link:function(scope, element, attrs){
-
+                scope.rule = ['bogo', 'bulk']
+                scope.r = scope.rule[0]
+                scope.$watch('r', function(new_rule, old_rule) {
+                    ngCart.setRule(new_rule);
+                });
             }
         };
     }])
@@ -92,7 +96,7 @@ angular.module('ngCart.directives', ['ngCart.fulfilment'])
                     fulfilmentProvider.setService($scope.service);
                     fulfilmentProvider.setSettings($scope.settings);
                     var promise = fulfilmentProvider.checkout();
-                    console.log(promise);
+                    //console.log(promise);
                 }
             }]),
             scope: {

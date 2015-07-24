@@ -1,6 +1,9 @@
 <div class="alert alert-warning" role="alert" ng-show="ngCart.getTotalItems() === 0">
     Your cart is empty
 </div>
+<div class="checkout alert alert-success" role="alert" style='display:none;'>
+    Checkout Successful! :-)
+</div>
 <div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
     <table class="table table-striped ngCart cart">
         <thead>
